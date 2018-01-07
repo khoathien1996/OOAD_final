@@ -1,0 +1,30 @@
+﻿<Window x:Class="QuanLyHocSinh_OOAD.formBangDiem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="512.306" Width="714.5" Title="Bảng điểm">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="195*"/>
+            <ColumnDefinition Width="158*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="back1.png" Stretch="UniformToFill" TileMode="FlipXY"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Lớp học" HorizontalAlignment="Left" Height="29" Margin="20,55,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Năm học" HorizontalAlignment="Left" Height="29" Margin="1.97,55,0,0" VerticalAlignment="Top" Width="126" Grid.Column="1"/>
+        <Label Content="Mã học sinh" HorizontalAlignment="Left" Height="29" Margin="20,21,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Tên học sinh" HorizontalAlignment="Left" Height="29" Margin="2.97,21,0,0" VerticalAlignment="Top" Width="125" Grid.Column="1"/>
+        <TextBlock x:Name="txtMaHS" HorizontalAlignment="Left" Height="29" Margin="112,26,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="176" Cursor="None"/>
+        <TextBlock x:Name="txtTenHS" HorizontalAlignment="Left" Height="29" Margin="95.97,26,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="176" Grid.Column="1"/>
+        <TextBlock x:Name="txtLopHoc" HorizontalAlignment="Left" Height="29" Margin="112,60,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="176" Cursor="None"/>
+        <TextBlock x:Name="txtNamHoc" HorizontalAlignment="Left" Height="29" Margin="95.97,60,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="176" Grid.Column="1"/>
+        <Label Content="Học kì" HorizontalAlignment="Left" Height="29" Margin="20,89,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label Content="Bảng điểm" HorizontalAlignment="Left" Height="38" Margin="326,109,0,0" VerticalAlignment="Top" Width="114" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="dgBangDiem" HorizontalAlignment="Left" Margin="20,152,0,0" VerticalAlignment="Top" Height="319" Width="668" IsReadOnly="True" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cbHocKi" HorizontalAlignment="Left" Height="29" Margin="111,84,0,0" VerticalAlignment="Top" Width="71" IsEditable="True" IsReadOnly="True" DropDownClosed="cbHocKi_DropDownClosed"/>
+
+    </Grid>
+</Window>

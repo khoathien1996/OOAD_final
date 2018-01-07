@@ -1,0 +1,16 @@
+﻿<Window x:Class="QuanLyHocSinh_OOAD.frmTongKet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+        Title="Tổng kết" Height="352.09" Width="732.835" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <WindowsFormsHost HorizontalAlignment="Left" Margin="-2,0,0,0" Width="727" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <rv:ReportViewer x:Name="ReportViewerDemo" />
+        </WindowsFormsHost>
+    </Grid>
+</Window>
