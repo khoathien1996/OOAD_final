@@ -84,7 +84,7 @@ namespace QuanLyHocSinh_OOAD
                 cm.CommandType = CommandType.Text;
                 cm.Parameters.AddWithValue("@_mahocsinh", getMaHS());
                 cm.Parameters.AddWithValue("@_hocki", Int32.Parse(cbHocKi.Text));
-                cm.CommandText = @"SELECT TENMH as 'Tên môn học', H1D1, H1D2, H1D3, H1D4, H1D5, H2D1, H2D2, H2D3, H2D4, H2D5, THI as 'Điểm thi', DTB as 'Điểm TB', DANHGIA as 'Đánh giá' FROM HOCSINH LEFT JOIN KETQUAMON ON HOCSINH.MAHS = KETQUAMON.MAHS, MONHOC MH WHERE HOCSINH.MAHS = @_mahocsinh AND MH.MAMH=KETQUAMON.MAMH AND HOCKY=@_hocki";
+                cm.CommandText = @"SELECT TENMH as 'Tên môn học', H1D1, H1D2, H1D3, H1D4, H1D5, H2D1, H2D2, H2D3, H2D4, H2D5, THI as 'Điểm thi', ROUND(DTB,2) as 'Điểm TB', DANHGIA as 'Đánh giá' FROM HOCSINH LEFT JOIN KETQUAMON ON HOCSINH.MAHS = KETQUAMON.MAHS, MONHOC MH WHERE HOCSINH.MAHS = @_mahocsinh AND MH.MAMH=KETQUAMON.MAMH AND HOCKY=@_hocki";
 
                 SqlDataAdapter sdaDataAdapter = new SqlDataAdapter(cm);
 

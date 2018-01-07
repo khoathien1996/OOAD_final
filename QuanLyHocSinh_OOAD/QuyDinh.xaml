@@ -15,7 +15,7 @@
         <TextBox x:Name="txtTuoiMax" HorizontalAlignment="Left" Height="23" Margin="248,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295"/>
         <Label x:Name="label_Copy1" Content="Sỉ số lớp tối đa" HorizontalAlignment="Left" Margin="70,181,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtSiSoMax" HorizontalAlignment="Left" Height="23" Margin="248,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295"/>
-        <Label x:Name="label_Copy2" Content="Điểm dạt của môn học" HorizontalAlignment="Left" Margin="70,251,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Điểm đạt của môn học" HorizontalAlignment="Left" Margin="70,251,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtDiemDat" HorizontalAlignment="Left" Height="23" Margin="248,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295"/>
         <Button x:Name="btnThoat" Content="Thoát" HorizontalAlignment="Left" Margin="468,316,0,0" VerticalAlignment="Top" Width="75" Click="btnThoat_Click"/>
         <Button x:Name="btnLuu" Content="Lưu" HorizontalAlignment="Left" Margin="350,316,0,0" VerticalAlignment="Top" Width="75" Click="btnLuu_Click"/>
