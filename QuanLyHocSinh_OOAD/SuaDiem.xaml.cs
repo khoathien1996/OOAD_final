@@ -165,7 +165,7 @@ namespace QuanLyHocSinh_OOAD
             h2d3.IsEnabled = true;
             h2d2.IsEnabled = true;
             h2d1.IsEnabled = true;
-
+            diemthi.IsEnabled = true;
             switch (GetHeso1(monhoc.Text))
             {
                 case 5:
@@ -211,40 +211,40 @@ namespace QuanLyHocSinh_OOAD
             {
                 case 5:
                     break;
-                case 4: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
+                case 4: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
                     break;
-                case 3: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
+                case 3: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
                     break;
-                case 2: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
-                    h1d3.IsEnabled = false;
-                    h1d3.Text = "0";
+                case 2: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
+                    h2d3.IsEnabled = false;
+                    h2d3.Text = "0";
                     break;
-                case 1: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
-                    h1d3.IsEnabled = false;
-                    h1d3.Text = "0";
-                    h1d2.IsEnabled = false;
-                    h1d2.Text = "0";
+                case 1: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
+                    h2d3.IsEnabled = false;
+                    h2d3.Text = "0";
+                    h2d2.IsEnabled = false;
+                    h2d2.Text = "0";
                     break;
-                case 0: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
-                    h1d3.IsEnabled = false;
-                    h1d3.Text = "0";
-                    h1d2.IsEnabled = false;
-                    h1d2.Text = "0";
-                    h1d1.IsEnabled = false;
-                    h1d1.Text = "0";
+                case 0: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
+                    h2d3.IsEnabled = false;
+                    h2d3.Text = "0";
+                    h2d2.IsEnabled = false;
+                    h2d2.Text = "0";
+                    h2d1.IsEnabled = false;
+                    h2d1.Text = "0";
                     break;
             }
         }

@@ -20,17 +20,18 @@ namespace QuanLyHocSinh_OOAD
             check_lophoc.SelectedIndex = 0;
             
             Load_DataGrid();
-            h1d1.IsEnabled = false;
-            h1d2.IsEnabled = false;
-            h1d3.IsEnabled = false;
-            h1d4.IsEnabled = false;
-            h1d5.IsEnabled = false;
-            h2d1.IsEnabled = false;
-            h2d2.IsEnabled = false;
-            h2d3.IsEnabled = false;
-            h2d4.IsEnabled = false;
-            h2d5.IsEnabled = false;
-            diemthi.IsEnabled = false;
+            Dis();
+            //h1d1.IsEnabled = false;
+            //h1d2.IsEnabled = false;
+            //h1d3.IsEnabled = false;
+            //h1d4.IsEnabled = false;
+            //h1d5.IsEnabled = false;
+            //h2d1.IsEnabled = false;
+            //h2d2.IsEnabled = false;
+            //h2d3.IsEnabled = false;
+            //h2d4.IsEnabled = false;
+            //h2d5.IsEnabled = false;
+            //diemthi.IsEnabled = false;
         }
 
         //public static string strConnectionString = "Data Source=DESKTOP-DLT0AO8;Initial Catalog=QLHS;Integrated Security=True";
@@ -139,9 +140,9 @@ namespace QuanLyHocSinh_OOAD
                 namhoc.Text = row["Năm học"].ToString();
             }
             
-            if (box_mon.Text == "")
-            { MessageBox.Show("Mời chọn môn học!"); }
-            else { Dis(); }
+            //if (box_mon.Text == "")
+            //{ MessageBox.Show("Mời chọn môn học!"); }
+            //else { Dis(); }
 
             try
             {
@@ -286,40 +287,40 @@ namespace QuanLyHocSinh_OOAD
             {
                 case 5:
                     break;
-                case 4: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
+                case 4: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
                     break;
-                case 3: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
+                case 3: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
                     break;
-                case 2: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
-                    h1d3.IsEnabled = false;
-                    h1d3.Text = "0";
+                case 2: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
+                    h2d3.IsEnabled = false;
+                    h2d3.Text = "0";
                     break;
-                case 1: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
-                    h1d3.IsEnabled = false;
-                    h1d3.Text = "0";
-                    h1d2.IsEnabled = false;
-                    h1d2.Text = "0";
+                case 1: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
+                    h2d3.IsEnabled = false;
+                    h2d3.Text = "0";
+                    h2d2.IsEnabled = false;
+                    h2d2.Text = "0";
                     break;
-                case 0: h1d5.IsEnabled = false;
-                    h1d5.Text = "0";
-                    h1d4.IsEnabled = false;
-                    h1d4.Text = "0";
-                    h1d3.IsEnabled = false;
-                    h1d3.Text = "0";
-                    h1d2.IsEnabled = false;
-                    h1d2.Text = "0";
-                    h1d1.IsEnabled = false;
-                    h1d1.Text = "0";
+                case 0: h2d5.IsEnabled = false;
+                    h2d5.Text = "0";
+                    h2d4.IsEnabled = false;
+                    h2d4.Text = "0";
+                    h2d3.IsEnabled = false;
+                    h2d3.Text = "0";
+                    h2d2.IsEnabled = false;
+                    h2d2.Text = "0";
+                    h2d1.IsEnabled = false;
+                    h2d1.Text = "0";
                     break;
             }
         }
@@ -405,7 +406,8 @@ namespace QuanLyHocSinh_OOAD
 
         private void box_mon_DropDownClosed(object sender, EventArgs e)
         {
-            Load_DataGrid();     
+            Load_DataGrid();
+            Dis();
         }
 
  
