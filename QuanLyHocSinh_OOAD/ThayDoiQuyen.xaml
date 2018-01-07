@@ -20,7 +20,7 @@
         <ComboBox x:Name="cmbQuyenTruyCap" HorizontalAlignment="Left" Margin="190,111,0,0" VerticalAlignment="Top" Width="180" Grid.ColumnSpan="2"/>
         <Button x:Name="btnThoat" Content="Thoát" HorizontalAlignment="Left" Margin="68.588,159,0,0" VerticalAlignment="Top" Width="75"  Foreground="White" Background="#FF4E7AC7" BorderBrush="White" Grid.Column="1" Click="btnThoat_Click"/>
         <Button x:Name="btnLuu" Content="Lưu" HorizontalAlignment="Left" Margin="190,159,0,0" VerticalAlignment="Top" Width="75"  Background="#FF4E7AC7" BorderBrush="White" Foreground="White" Grid.ColumnSpan="2" Click="btnLuu_Click"/>
-        <TextBox x:Name="txtGiaoVien" HorizontalAlignment="Left" Margin="189,65,0,0" VerticalAlignment="Top" Width="180" Height="26" MaxLength="32" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtGiaoVien" HorizontalAlignment="Left" Margin="189,65,0,0" VerticalAlignment="Top" Width="180" Height="26" MaxLength="32" Grid.ColumnSpan="2" IsReadOnly="True"/>
 
     </Grid>
 </Window>

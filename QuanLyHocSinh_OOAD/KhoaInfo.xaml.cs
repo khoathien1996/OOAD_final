@@ -22,8 +22,9 @@ namespace QuanLyHocSinh_OOAD
             LoadComponent();
         }
 
-        void LoadData(string str)
+        void LoadData()
         {
+            string str = "select MAKHOA as 'Mã khoa', TENKHOA as 'Tên khoa', GIAOVIEN.MAGV as 'Mã trưởng khoa', HOTEN as 'Tên trưởng khoa' from KHOA, GIAOVIEN where KHOA.TRGKHOA = GIAOVIEN.MAGV";
             try
             {
                 SqlDataAdapter sdaDataAdapter = new SqlDataAdapter(str, Connection.strConnectionString);
@@ -63,11 +64,11 @@ namespace QuanLyHocSinh_OOAD
                 }
                 dr.Close();
 
-                cmbTruongKhoa.Items.Add("Chưa xác định trưởng khoa");
+                //cmbTruongKhoa.Items.Add("Chưa xác định trưởng khoa");
 
                 cmd.CommandText = "select MAKHOA as 'Mã khoa', TENKHOA as 'Tên khoa', TRGKHOA as 'Mã trưởng khoa' from KHOA";
 
-                LoadData(cmd.CommandText);
+                LoadData();
 
 
             }
@@ -162,7 +163,7 @@ namespace QuanLyHocSinh_OOAD
 
 
 
-            LoadData("select MAKHOA as 'Mã khoa', TENKHOA as 'Tên khoa', TRGKHOA as 'Mã trưởng khoa' from KHOA");
+            LoadData();
 
             conn.Close();
 
@@ -235,7 +236,7 @@ namespace QuanLyHocSinh_OOAD
                 MessageBox.Show("Bạn đã xóa thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                 strOldMaKhoa = "";
 
-                LoadData("select MAKHOA as 'Mã khoa', TENKHOA as 'Tên khoa', TRGKHOA as 'Mã trưởng khoa' from KHOA");
+                LoadData();
             }
 
         }

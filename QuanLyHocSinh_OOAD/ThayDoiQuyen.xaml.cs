@@ -32,7 +32,7 @@ namespace QuanLyHocSinh_OOAD
         {
             txtGiaoVien.Clear();
             cmbQuyenTruyCap.Items.Add("1 - Toàn quyền truy cập cho ban giám hiệu");
-            cmbQuyenTruyCap.Items.Add("2 - Quyền truy cập của các nhân viên văn phòng");
+            cmbQuyenTruyCap.Items.Add("2 - Quyền truy cập của giáo vụ");
             cmbQuyenTruyCap.Items.Add("3 - Quyền truy cập của giáo viên");
 
             try
